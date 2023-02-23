@@ -12,19 +12,12 @@ int main(void)
 
 	for (i = '0' ; i <= '9' ; ++i)
 	{
-		for (j = '1' ; j <= '9' ; ++j)
-		{
-			if (i != j && i < j)
+		putchar(i);
+			if (i != '9')
 			{
-				putchar(i);
-				putchar(j);
-				if (i + j != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
-		}
 	}
 	putchar('\n');
 	return (0);
